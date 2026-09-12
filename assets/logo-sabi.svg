@@ -1,0 +1,89 @@
+<svg xmlns="http://w3.org" viewBox="0 0 1000 780" width="100%" height="100%">
+  <defs>
+    <!-- Gradiente para el arco superior azul -->
+    <linearGradient id="arcoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0055a5" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#00aaff" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="70%" stop-color="#00aaff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0055a5" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Gradiente para el lado izquierdo del techo (Azul) -->
+    <linearGradient id="techoAzul" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0033cc"/>
+      <stop offset="100%" stop-color="#00a8ff"/>
+    </linearGradient>
+
+    <!-- Gradiente para el lado derecho del techo (Verde/Cian) -->
+    <linearGradient id="techoVerde" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00c9a7"/>
+      <stop offset="100%" stop-color="#008080"/>
+    </linearGradient>
+
+    <!-- Gradiente para la palabra Bienestar Inteligente -->
+    <linearGradient id="textoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00a8ff"/>
+      <stop offset="100%" stop-color="#4ade80"/>
+    </linearGradient>
+
+    <!-- Estilos de tipografía incrustados para máxima compatibilidad -->
+    <style>
+      .font-sans { font-family: 'Montserrat', 'Segoe UI', 'Arial', sans-serif; font-weight: 700; }
+      .font-light { font-family: 'Montserrat', 'Segoe UI', 'Arial', sans-serif; font-weight: 300; }
+      .text-white { fill: #ffffff; }
+    </style>
+  </defs>
+
+  <!-- 1. ARCO SUPERIOR DE LUZ -->
+  <path d="M 150,220 A 400,160 0 0,1 850,220" fill="none" stroke="url(#arcoGrad)" stroke-width="6" stroke-linecap="round"/>
+  <!-- Destello central en el arco -->
+  <circle cx="500" cy="62" r="7" fill="#ffffff"/>
+  <circle cx="500" cy="62" r="20" fill="#00aaff" opacity="0.4"/>
+
+  <!-- 2. ICONO CENTRAL DE LA CASA (TECHO Y VENTANAS) -->
+  <g id="casa-icono">
+    <!-- Techo Izquierdo (Azul) -->
+    <path d="M 500,230 L 300,410 L 350,410 L 500,275 Z" fill="url(#techoAzul)"/>
+    <!-- Techo Derecho (Verde) -->
+    <path d="M 500,230 L 700,410 L 650,410 L 500,275 Z" fill="url(#techoVerde)"/>
+    
+    <!-- Ventanas blancas (4 cuadrados) -->
+    <rect x="455" y="315" width="20" height="20" fill="#ffffff" rx="2"/>
+    <rect x="480" y="315" width="20" height="20" fill="#ffffff" rx="2"/>
+    <rect x="455" y="340" width="20" height="20" fill="#ffffff" rx="2"/>
+    <rect x="480" y="340" width="20" height="20" fill="#ffffff" rx="2"/>
+  </g>
+
+  <!-- 3. TIPOGRAFÍA PRINCIPAL: S A B i -->
+  <g id="sabi-texto" class="font-sans text-white" font-size="160">
+    <!-- Letra S -->
+    <text x="40" y="410" letter-spacing="-5">S</text>
+    <!-- Letra B -->
+    <text x="680" y="410">B</text>
+    <!-- Letra i -->
+    <text x="810" y="410" font-weight="900">i</text>
+  </g>
+
+  <!-- 4. PALABRA: C O M M U N I T Y -->
+  <text x="500" y="510" class="font-light text-white" font-size="52" letter-spacing="32" text-anchor="middle">COMMUNITY</text>
+
+  <!-- 5. ESLOGAN INFERIOR Y LÍNEAS DECORATIVAS -->
+  <g id="eslogan">
+    <!-- Línea izquierda -->
+    <line x1="40" y1="620" x2="120" y2="620" stroke="#0055a5" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Texto principal del eslogan -->
+    <text x="500" y="630" text-anchor="middle" font-size="34" class="font-light text-white">
+      Sistema de Administración y
+    </text>
+    
+    <!-- Texto resaltado con gradiente -->
+    <text x="500" y="685" text-anchor="middle" font-size="36" class="font-sans" fill="url(#textoGrad)">
+      Bienestar Inteligente
+    </text>
+
+    <!-- Línea derecha -->
+    <line x1="880" y1="620" x2="960" y2="620" stroke="#0055a5" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>
