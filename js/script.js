@@ -59,7 +59,7 @@
       // its vertical center, so a feature only counts as "visible" (and
       // triggers its animation) once it crosses roughly the middle of
       // the screen — not the instant it peeks in at the bottom edge.
-      { threshold: 0, rootMargin: "-70% 0px -70% 0px" }
+      { threshold: 0, rootMargin: "-75% 0px -75% 0px" }
     );
 
     features.forEach(function (el) { revealObserver.observe(el); });
