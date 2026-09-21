@@ -774,3 +774,63 @@ img { max-width: 100%; display: block; }
 .faq__inline-link:focus-visible {
   color: var(--ink);
 }
+
+/* =========================================================
+   FAQ — botón "Revelar / Ocultar FAQ's"
+   ========================================================= */
+
+.faq__toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 2.4rem auto 0;
+  padding: 0.85rem 1.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--hairline);
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.faq__toggle:hover,
+.faq__toggle:focus-visible {
+  border-color: var(--accent-b);
+  color: var(--accent-b);
+  background: rgba(255,255,255,0.03);
+}
+
+.faq__toggle-icon {
+  width: 9px;
+  height: 9px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.faq__toggle[aria-expanded="true"] .faq__toggle-icon {
+  transform: rotate(-135deg);
+}
+
+/* contenedor que se despliega suavemente al mostrar/ocultar */
+.faq__reveal {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.45s ease;
+}
+
+.faq__reveal.is-open {
+  grid-template-rows: 1fr;
+}
+
+.faq__reveal-inner {
+  overflow: hidden;
+}
+
+.faq__reveal .faq__list {
+  margin-top: 2.5rem;
+}
