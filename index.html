@@ -155,7 +155,7 @@
       </div>
       <div class="feature__copy">
         <h3 class="feature__title">Bienestar y Valor</h3>
-        <p class="feature__text">SABI está diseñado para que la automatización genere ahorros operativos: menos tareas manuales, menos papelería, menos procesos innecesarios y una mejor coordinación de recursos. La meta es que el sistema ayude a pagar su propia operación y libere recursos para lo que realmente importa.</p>
+        <p class="feature__text">SABI está diseñado para que la automatización genere ahorros operativos: menos tareas manuales, menos papelería, menos procesos innecesarios y una mejor coordinación de recursos. La meta es que el sistema ayude a liberar recursos para lo que realmente importa.</p>
       </div>
     </article>
 
@@ -171,7 +171,7 @@
       <div class="feature__copy">
         <p class="feature__eyebrow">Servicio independiente</p>
         <h3 class="feature__title">SABI Remote</h3>
-        <p class="feature__text">¿Estás en el trabajo y necesitas que entre tu trabajador? ¿Llegó un paquete cuando no estás? ¿Tienes que pedirle a un vecino que abra la reja? Privada Inteligente resuelve ese problema: cada residente puede gestionar el acceso a su propia privada desde su celular, incluso cuando está lejos de casa.</p>
+        <p class="feature__text">¿Estás en el trabajo y necesitas que entre tu trabajador? ¿Llegó un paquete cuando no estás? ¿Tienes que pedirle a un vecino que abra la reja? SABI Remote resuelve ese problema: cada residente puede gestionar el acceso a su propia privada desde su celular, incluso cuando está lejos de casa.</p>
         <p class="feature__text feature__text--strong">Tu casa. Tu acceso. Tú decides quién entra.</p>
       </div>
     </article>
@@ -199,105 +199,116 @@
   </section>
 
 
- <!-- FAQ -->
+<!-- FAQ -->
   <section class="faq" id="faq">
     <div class="faq__inner">
       <p class="bridge__kicker">Preguntas frecuentes</p>
       <h2 class="bridge__headline">¿Y si tu comunidad pudiera funcionar de forma inteligente?</h2>
       <p class="bridge__text">Estas son algunas de las preguntas que más importan antes de dar el siguiente paso.</p>
 
-      <div class="faq__list">
+      <button type="button" class="faq__toggle" id="faqToggle" aria-expanded="false" aria-controls="faqReveal">
+        <span class="faq__toggle-label">Revelar FAQ's</span>
+        <span class="faq__toggle-icon" aria-hidden="true"></span>
+      </button>
 
-        <details class="faq__item">
-          <summary class="faq__summary">
-            <span>¿SABI realmente ayuda a reducir los costos de la comunidad?</span>
-            <span class="faq__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="faq__content"><div class="faq__answer"><p>
-            Sí. Automatiza tareas que hoy consumen tiempo, papeleo y llamadas, y ayuda a detectar en dónde se están yendo los recursos sin control. Eso libera presupuesto para mantenimiento, seguridad y mejoras. El ahorro exacto depende de la operación de cada comunidad.
-          </p></div></div>
-        </details>
+      <div class="faq__reveal" id="faqReveal">
+        <div class="faq__reveal-inner">
+          <div class="faq__list">
 
-        <details class="faq__item">
-          <summary class="faq__summary">
-            <span>¿Los residentes pierden el control de la comunidad al automatizarla?</span>
-            <span class="faq__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="faq__content"><div class="faq__answer"><p>
-            No. La automatización no decide por la comunidad, solo ejecuta lo que ella misma aprueba. Reglas, presupuestos, proveedores y cambios importantes pueden seguir sometiéndose a votación o autorización de los residentes, con el proceso que marque el reglamento.
-          </p></div></div>
-        </details>
+            <details class="faq__item">
+              <summary class="faq__summary">
+                <span>¿SABI realmente ayuda a reducir los costos de la comunidad?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq__content"><div class="faq__answer"><p>
+                Sí. Automatiza tareas que hoy consumen tiempo, papeleo y llamadas, y ayuda a detectar en dónde se están yendo los recursos sin control. Eso libera presupuesto para mantenimiento, seguridad y mejoras. El ahorro exacto depende de la operación de cada comunidad.
+              </p></div></div>
+            </details>
 
-        <details class="faq__item">
-          <summary class="faq__summary">
-            <span>¿SABI puede administrar otros servicios además de cuotas y accesos?</span>
-            <span class="faq__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="faq__content"><div class="faq__answer"><p>
-            Sí. Puede centralizar mantenimiento, limpieza, jardinería, seguridad, proveedores, incidencias y comunicados en un solo lugar, e incluso ayudar a comparar proveedores de la zona para mejorar precio y servicio sin bajar la calidad que la comunidad exige.
-          </p></div></div>
-        </details>
+            <details class="faq__item">
+              <summary class="faq__summary">
+                <span>¿Los residentes pierden el control de la comunidad al automatizarla?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq__content"><div class="faq__answer"><p>
+                No. La automatización no decide por la comunidad, solo ejecuta lo que ella misma aprueba. Reglas, presupuestos, proveedores y cambios importantes pueden seguir sometiéndose a votación o autorización de los residentes, con el proceso que marque el reglamento.
+              </p></div></div>
+            </details>
 
-        <details class="faq__item">
-          <summary class="faq__summary">
-            <span>¿La administración se vuelve más transparente con SABI?</span>
-            <span class="faq__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="faq__content"><div class="faq__answer"><p>
-            Sí. Pagos, gastos, incidencias y decisiones quedan registrados en un solo sistema, consultable por quien la comunidad determine. Nada depende de una hoja de cálculo o un cuaderno que solo una persona controla.
-          </p></div></div>
-        </details>
+            <details class="faq__item">
+              <summary class="faq__summary">
+                <span>¿SABI puede administrar otros servicios además de cuotas y accesos?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq__content"><div class="faq__answer"><p>
+                Sí. Puede centralizar mantenimiento, limpieza, jardinería, seguridad, proveedores, incidencias y comunicados en un solo lugar, e incluso ayudar a comparar proveedores de la zona para mejorar precio y servicio sin bajar la calidad que la comunidad exige.
+              </p></div></div>
+            </details>
 
-        <details class="faq__item">
-          <summary class="faq__summary">
-            <span>¿Qué pasa si mi comunidad ya tiene personal y proveedores?</span>
-            <span class="faq__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="faq__content"><div class="faq__answer"><p>
-            No hay que reemplazar todo de golpe. Puedes empezar automatizando los procesos que más tiempo consumen y, con datos reales de la operación, decidir después qué conviene mantener, reorganizar o cambiar.
-          </p></div></div>
-        </details>
+            <details class="faq__item">
+              <summary class="faq__summary">
+                <span>¿La administración se vuelve más transparente con SABI?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq__content"><div class="faq__answer"><p>
+                Sí. Pagos, gastos, incidencias y decisiones quedan registrados en un solo sistema, consultable por quien la comunidad determine. Nada depende de una hoja de cálculo o un cuaderno que solo una persona controla.
+              </p></div></div>
+            </details>
 
-        <details class="faq__item">
-          <summary class="faq__summary">
-            <span>¿En qué se diferencia una comunidad inteligente de una administración tradicional?</span>
-            <span class="faq__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="faq__content"><div class="faq__answer"><p>
-            Una administración tradicional depende de que alguien recuerde, capture y dé seguimiento a mano. Una comunidad inteligente convierte eso en procesos automáticos: el sistema registra, cobra, notifica y autoriza, para que las personas se enfoquen en decidir, no en perseguir pendientes.
-          </p></div></div>
-        </details>
+            <details class="faq__item">
+              <summary class="faq__summary">
+                <span>¿Qué pasa si mi comunidad ya tiene personal y proveedores?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq__content"><div class="faq__answer"><p>
+                No hay que reemplazar todo de golpe. Puedes empezar automatizando los procesos que más tiempo consumen y, con datos reales de la operación, decidir después qué conviene mantener, reorganizar o cambiar.
+              </p></div></div>
+            </details>
 
-                <details class="faq__item">
-          <summary class="faq__summary">
-            <span>¿Qué es SABI Remote y por qué es diferente al acceso general de SABI Community?</span>
-            <span class="faq__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="faq__content"><div class="faq__answer"><p>
-            Son servicios diferentes. SABI Community administra toda una comunidad. SABI Remote le da a cada residente el control de su propia reja para autorizar la entrada a un trabajador, familiar o repartidor desde su celular, esté donde esté.
-        </details>
+            <details class="faq__item">
+              <summary class="faq__summary">
+                <span>¿En qué se diferencia una comunidad inteligente de una administración tradicional?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq__content"><div class="faq__answer"><p>
+                Una administración tradicional depende de que alguien recuerde, capture y dé seguimiento a mano. Una comunidad inteligente convierte eso en procesos automáticos: el sistema registra, cobra, notifica y autoriza, para que las personas se enfoquen en decidir, no en perseguir pendientes.
+              </p></div></div>
+            </details>
 
-        <details class="faq__item">
-          <summary class="faq__summary">
-            <span>¿SABI Remote se adapta a mi sistema actual o necesito comprar equipo nuevo?</span>
-            <span class="faq__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="faq__content"><div class="faq__answer"><p>
-            Se adapta a la puerta automática que ya tienes, sin necesidad de reemplazar y sin perder la garantía de tu proveedor actual.
-          </p></div></div>
-        </details>
+            <details class="faq__item">
+              <summary class="faq__summary">
+                <span>¿Qué es SABI Remote y por qué es diferente al acceso general de SABI Community?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq__content"><div class="faq__answer"><p>
+                Son servicios diferentes. SABI Community administra toda una comunidad. SABI Remote le da a cada residente el control de su propia reja para autorizar la entrada a un trabajador, familiar o repartidor desde su celular, esté donde esté.
+              </p></div></div>
+            </details>
 
-        <details class="faq__item">
-          <summary class="faq__summary">
-            <span>¿Mis datos y los de mi comunidad están seguros?</span>
-            <span class="faq__icon" aria-hidden="true"></span>
-          </summary>
-          <div class="faq__content"><div class="faq__answer"><p>
-            Sí. La información de residentes, pagos y accesos se maneja conforme al <button type="button" class="faq__inline-link" data-modal-open="privacidad">aviso de privacidad</button> de SABI, con acceso limitado únicamente a quien la comunidad autorice.
-          </p></div></div>
-        </details>
-            
+            <details class="faq__item">
+              <summary class="faq__summary">
+                <span>¿SABI Remote se adapta a mi sistema actual o necesito comprar equipo nuevo?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq__content"><div class="faq__answer"><p>
+                Se adapta a la puerta automática que ya tienes, sin necesidad de reemplazar y sin perder la garantía de tu proveedor actual.
+              </p></div></div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__summary">
+                <span>¿Mis datos y los de mi comunidad están seguros?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <div class="faq__content"><div class="faq__answer"><p>
+                Sí. La información de residentes, pagos y accesos se maneja conforme al <button type="button" class="faq__inline-link" data-modal-open="privacidad">aviso de privacidad</button> de SABI, con acceso limitado únicamente a quien la comunidad autorice.
+              </p></div></div>
+            </details>
+
+          </div>
+        </div>
       </div>
+
     </div>
   </section>
 
