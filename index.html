@@ -11,6 +11,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
+
+<style>
+  .faq__inner{max-width:980px;margin:0 auto;padding:clamp(70px,10vw,120px) 24px}
+  .faq__list{margin-top:42px;display:grid;gap:12px}
+  .faq__item{border:1px solid rgba(255,255,255,.12);border-radius:16px;background:rgba(255,255,255,.035);overflow:hidden}
+  .faq__item summary{cursor:pointer;list-style:none;padding:22px 24px;font-family:Sora,sans-serif;font-weight:600;font-size:clamp(15px,2vw,18px);color:#fff}
+  .faq__item summary::-webkit-details-marker{display:none}
+  .faq__item summary:after{content:"+";float:right;font-size:24px;line-height:1;font-weight:400;opacity:.75}
+  .faq__item[open] summary:after{content:"−"}
+  .faq__item p{margin:0;padding:0 24px 24px;color:rgba(255,255,255,.72);line-height:1.7;font-family:"Work Sans",sans-serif}
+</style>
+
 </head>
 <body>
 
@@ -38,7 +50,7 @@
     <div class="hero__inner">
       <img src="assets/logo.png" alt="SABI Community — Sistema de Administración y Bienestar Inteligente" class="hero__logo">
       <h1 class="hero__headline">Comunidades que se administran solas. Familias que dejan de preocuparse.</h1>
-      <p class="hero__lead">SABI automatiza pagos, accesos y reportes de tu condominio, edificio o fraccionamiento — y le muestra a cada residente, en tiempo real, en qué se está usando su dinero.</p>
+      <p class="hero__lead">SABI transforma tu condominio, edificio o fraccionamiento en una comunidad inteligente: automatiza pagos, accesos, reportes y servicios, mientras cada residente puede consultar con claridad qué está pasando y cómo se está utilizando el dinero de todos.</p>
       <a href="#seguridad" class="hero__cta">
         <span>Ver cómo funciona</span>
       </a>
@@ -52,8 +64,8 @@
   <section class="bridge">
     <div class="bridge__inner">
       <p class="bridge__kicker">El problema de siempre</p>
-      <h2 class="bridge__headline">Cada comunidad mueve dinero, controla accesos y guarda información de decenas de familias — casi siempre a mano, en hojas de cálculo y grupos de chat.</h2>
-      <p class="bridge__text">SABI reemplaza esa operación manual con un solo sistema: cobra, autoriza y reporta automáticamente, para que administrar deje de ser un riesgo y se convierta en una tranquilidad compartida por todos.</p>
+      <h2 class="bridge__headline">Menos personal, menos gastos innecesarios, menos problemas. Más control, más transparencia y más tranquilidad.</h2>
+      <p class="bridge__text">SABI sustituye gran parte de la operación manual por automatización: cobra, autoriza accesos, registra movimientos, recibe reportes y ayuda a coordinar servicios desde una sola plataforma. El objetivo es que la comunidad deje de pagar por procesos que una tecnología puede hacer de forma más rápida, trazable y eficiente.</p>
     </div>
   </section>
 
@@ -69,7 +81,7 @@
       </div>
       <div class="feature__copy">
         <h3 class="feature__title">Seguridad Inteligente</h3>
-        <p class="feature__text">Control de acceso, cámaras y alertas conectadas en un mismo panel. Cada entrada queda registrada y cada visita autorizada, sin que la caseta tenga que llevar una bitácora en papel.</p>
+        <p class="feature__text">Control de acceso, cámaras y alertas conectadas en un mismo sistema. Cada entrada puede quedar registrada y cada visita autorizada, reduciendo tareas manuales y haciendo más fácil saber qué ocurre dentro de la comunidad.</p>
       </div>
     </article>
 
@@ -84,7 +96,7 @@
       </div>
       <div class="feature__copy">
         <h3 class="feature__title">Acceso Automatizado</h3>
-        <p class="feature__text">Residentes y visitas entran con un código QR que se activa y expira solo. Sin plumas que capturar a mano, sin tarjetas que se pierden, sin llamadas a la caseta para confirmar quién puede pasar.</p>
+        <p class="feature__text">El acceso deja de depender de una llamada a la caseta. Los propios residentes pueden autorizar entradas desde su celular y generar accesos temporales para familiares, trabajadores, proveedores o visitas. ¿Estás fuera de casa? No importa: puedes gestionar un acceso desde prácticamente cualquier lugar con conexión a internet.</p>
       </div>
     </article>
 
@@ -100,7 +112,7 @@
       </div>
       <div class="feature__copy">
         <h3 class="feature__title">Administración Transparente</h3>
-        <p class="feature__text">Cada cuota, gasto y saldo queda documentado y visible para quien tenga permiso de verlo. Se acabaron las dudas sobre en qué se gastó la cuota de mantenimiento este mes.</p>
+        <p class="feature__text">Cada cuota, gasto, ingreso y saldo puede quedar documentado y disponible para consulta de los residentes con los permisos correspondientes. La administración deja de depender de explicaciones aisladas y pasa a tener información trazable, ordenada y accesible.</p>
       </div>
     </article>
 
@@ -115,7 +127,7 @@
       </div>
       <div class="feature__copy">
         <h3 class="feature__title">Comunidad Conectada</h3>
-        <p class="feature__text">Avisos, encuestas y reportes de fallas en un solo canal, para que vecinos y administración se entiendan sin depender de un grupo de chat que nadie alcanza a leer completo.</p>
+        <p class="feature__text">Avisos, encuestas, votaciones y reportes en un solo lugar. Los residentes participan, autorizan y dan seguimiento sin depender de cadenas de mensajes ni de perseguir a otros vecinos para resolver algo que afecta a toda la comunidad.</p>
       </div>
     </article>
 
@@ -131,10 +143,62 @@
       </div>
       <div class="feature__copy">
         <h3 class="feature__title">Bienestar y Valor</h3>
-        <p class="feature__text">Cuando la administración es eficiente, el dinero de todos rinde más: menos fugas, menos morosidad y más presupuesto disponible para lo que realmente mejora la vida en comunidad.</p>
+        <p class="feature__text">SABI está diseñado para que la automatización genere ahorros operativos: menos tareas manuales, menos papelería, menos procesos innecesarios y una mejor coordinación de recursos. La meta es que el sistema ayude a pagar su propia operación y libere recursos para lo que realmente importa.</p>
       </div>
     </article>
 
+  </section>
+
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="faq__inner">
+      <p class="bridge__kicker">Preguntas frecuentes</p>
+      <h2 class="bridge__headline">¿Y si tu comunidad pudiera funcionar de forma inteligente?</h2>
+      <p class="bridge__text">Estas son algunas de las preguntas que más importan antes de dar el siguiente paso.</p>
+
+      <div class="faq__list">
+        <details class="faq__item">
+          <summary>¿SABI realmente puede ayudar a reducir los costos de la comunidad?</summary>
+          <p>Sí. Está diseñado para automatizar tareas que normalmente requieren tiempo, personal, papelería, llamadas y procesos manuales. Al reducir trabajo operativo y detectar oportunidades de ahorro, la comunidad puede destinar más recursos a mantenimiento, seguridad y mejoras. El ahorro real dependerá de la operación y necesidades de cada comunidad.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>¿Qué pasa si estoy fuera de casa y necesito abrirle la puerta a alguien?</summary>
+          <p>No necesitas estar dentro de la comunidad. Puedes autorizar desde tu celular el acceso de una visita, trabajador, proveedor o familiar y establecer las condiciones de acceso que correspondan. Así dejas de depender de otro vecino para abrir la reja o recibir un paquete.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>¿Los residentes pierden el control de la comunidad al automatizarla?</summary>
+          <p>No. La automatización debe servir a la comunidad, no sustituir sus decisiones. Las reglas, cambios relevantes, presupuestos y decisiones que así lo establezca el reglamento pueden someterse a votación, autorización de los residentes o al proceso de selección que la propia comunidad apruebe.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>¿SABI puede administrar otros servicios además de las cuotas y los accesos?</summary>
+          <p>Sí. La plataforma puede centralizar la gestión de los servicios que requiera la comunidad: mantenimiento, limpieza, jardinería, seguridad, proveedores, incidencias, comunicados, cobros y otros procesos administrativos. Además, puede ayudar a identificar y comparar proveedores de la zona para buscar mejores condiciones de precio y servicio, sin sacrificar los criterios de calidad que la comunidad determine.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>¿Cómo se evita que un proveedor o administrador decida por su cuenta?</summary>
+          <p>La idea es que las decisiones importantes queden sujetas a reglas claras y trazables. Cuando corresponda, las propuestas pueden presentarse a la comunidad para votación, autorización o licitación, dejando registro de la decisión y de las condiciones aprobadas.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>¿La administración se vuelve más transparente con SABI?</summary>
+          <p>Ese es uno de sus objetivos principales. La información puede concentrarse en un solo sistema para que los movimientos, pagos, gastos, incidencias y decisiones autorizadas tengan un registro consultable por las personas que la comunidad determine.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>¿Qué pasa si la comunidad ya tiene personal y proveedores?</summary>
+          <p>SABI no tiene que significar reemplazar todo de golpe. Puede comenzar automatizando los procesos que más tiempo y recursos consumen y, a partir de los datos reales de la operación, detectar dónde conviene mantener, reorganizar o sustituir procesos, personal o proveedores.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>¿Qué diferencia a una comunidad inteligente de una administración tradicional?</summary>
+          <p>Una administración tradicional suele depender de personas que recuerdan, capturan, avisan y dan seguimiento. Una comunidad inteligente convierte esos procesos en flujos digitales: el sistema registra, notifica, autoriza, cobra, consulta y genera información para que las personas se concentren en tomar decisiones, no en perseguir pendientes.</p>
+        </details>
+      </div>
+    </div>
   </section>
 
   <!-- RECAP / CTA -->
