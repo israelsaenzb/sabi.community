@@ -23,6 +23,18 @@
   .faq__item p{margin:0;padding:0 24px 24px;color:rgba(255,255,255,.72);line-height:1.7;font-family:"Work Sans",sans-serif}
 </style>
 
+<style>
+.feature__eyebrow{display:inline-block;margin:0 0 12px;font-family:Sora,sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;opacity:.72}
+.feature__text--strong{font-family:Sora,sans-serif;font-weight:700}
+.solutions__inner{max-width:1100px;margin:0 auto;padding:clamp(70px,10vw,120px) 24px}
+.solutions__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:42px}
+.solution-card{padding:32px;border:1px solid rgba(255,255,255,.12);border-radius:22px;background:rgba(255,255,255,.035)}
+.solution-card--accent{background:linear-gradient(135deg,rgba(0,190,255,.10),rgba(70,230,150,.07));border-color:rgba(70,230,150,.28)}
+.solution-card__label{display:inline-block;margin-bottom:14px;font-family:Sora,sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;opacity:.65}
+.solution-card h3{margin:0 0 12px;font-family:Sora,sans-serif;font-size:clamp(20px,3vw,28px)}
+.solution-card p{margin:0;line-height:1.7;opacity:.76}
+@media (max-width:700px){.solutions__grid{grid-template-columns:1fr}.solution-card{padding:25px}}
+</style>
 </head>
 <body>
 
@@ -96,7 +108,7 @@
       </div>
       <div class="feature__copy">
         <h3 class="feature__title">Acceso Automatizado</h3>
-        <p class="feature__text">El acceso deja de depender de una llamada a la caseta. Los propios residentes pueden autorizar entradas desde su celular y generar accesos temporales para familiares, trabajadores, proveedores o visitas. ¿Estás fuera de casa? No importa: puedes gestionar un acceso desde prácticamente cualquier lugar con conexión a internet.</p>
+        <p class="feature__text">Para la operación general de la comunidad, SABI permite gestionar accesos digitales para residentes, visitas y proveedores. Los permisos pueden generarse, activarse y expirar automáticamente, reduciendo llamadas, registros manuales y tareas innecesarias en la entrada.</p>
       </div>
     </article>
 
@@ -147,6 +159,43 @@
       </div>
     </article>
 
+    <article class="feature feature--private" id="privada-inteligente" data-accent="5">
+      <div class="feature__media">
+        <svg class="feature__icon" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="draw" d="M18 58 L60 22 L102 58 V104 H18 Z" stroke-width="4" stroke-linejoin="round"/>
+          <path class="draw draw--delay" d="M60 22 V104" stroke-width="4"/>
+          <rect class="draw draw--delay2" x="31" y="65" width="18" height="18" rx="2" stroke-width="4"/>
+          <rect class="draw draw--delay2" x="71" y="65" width="18" height="18" rx="2" stroke-width="4"/>
+        </svg>
+      </div>
+      <div class="feature__copy">
+        <p class="feature__eyebrow">Servicio independiente</p>
+        <h3 class="feature__title">Privada Inteligente</h3>
+        <p class="feature__text">¿Estás en el trabajo y necesitas que entre tu trabajador? ¿Llegó un paquete cuando no estás? ¿Tienes que pedirle a un vecino que abra la reja? Privada Inteligente resuelve ese problema: cada residente puede gestionar el acceso a su propia privada desde su celular, incluso cuando está lejos de casa.</p>
+        <p class="feature__text feature__text--strong">Tu casa. Tu acceso. Tú decides quién entra.</p>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- SOLUTIONS -->
+  <section class="solutions">
+    <div class="solutions__inner">
+      <p class="bridge__kicker">Dos problemas de acceso. Dos soluciones.</p>
+      <h2 class="bridge__headline">No todos los accesos se administran de la misma manera.</h2>
+      <div class="solutions__grid">
+        <article class="solution-card">
+          <span class="solution-card__label">Servicio para la comunidad</span>
+          <h3>Acceso Automatizado</h3>
+          <p>Administra el acceso general de residentes, visitas y proveedores mediante permisos digitales, códigos QR y reglas de acceso.</p>
+        </article>
+        <article class="solution-card solution-card--accent">
+          <span class="solution-card__label">Servicio para tu privada</span>
+          <h3>Privada Inteligente</h3>
+          <p>Resuelve el problema cotidiano de no poder abrir tu propia reja cuando estás trabajando, viajando o lejos de casa. Gestiona desde tu celular quién puede entrar.</p>
+        </article>
+      </div>
+    </div>
   </section>
 
 
@@ -164,8 +213,13 @@
         </details>
 
         <details class="faq__item">
-          <summary>¿Qué pasa si estoy fuera de casa y necesito abrirle la puerta a alguien?</summary>
-          <p>No necesitas estar dentro de la comunidad. Puedes autorizar desde tu celular el acceso de una visita, trabajador, proveedor o familiar y establecer las condiciones de acceso que correspondan. Así dejas de depender de otro vecino para abrir la reja o recibir un paquete.</p>
+          <summary>¿Qué es Privada Inteligente y por qué es diferente al acceso general de SABI?</summary>
+          <p>Son servicios diferentes. El acceso general administra la entrada a la comunidad mediante permisos digitales. Privada Inteligente está pensado para un problema específico de las privadas: que un residente pueda abrir su propia reja o autorizar a un trabajador, familiar o repartidor desde su celular, aunque esté en el trabajo, viajando o lejos de casa.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary>¿Puedo abrir mi reja o autorizar a alguien aunque esté trabajando o fuera de la ciudad?</summary>
+          <p>Sí. Ese es precisamente uno de los objetivos de Privada Inteligente: dejar de depender de un vecino para abrir la reja o recibir un paquete. Desde tu celular puedes gestionar el acceso que necesites, sujeto a las reglas de seguridad configuradas para tu privada.</p>
         </details>
 
         <details class="faq__item">
