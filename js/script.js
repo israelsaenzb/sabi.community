@@ -150,4 +150,20 @@
       first.focus();
     }
   });
+/* ---------------------------------------------------------
+     FAQ: botón "Revelar FAQ's" / "Ocultar FAQ's"
+     --------------------------------------------------------- */
+  var faqToggle = document.getElementById("faqToggle");
+  var faqReveal = document.getElementById("faqReveal");
+
+  if (faqToggle && faqReveal) {
+    faqToggle.addEventListener("click", function () {
+      var isOpen = faqReveal.classList.toggle("is-open");
+      faqToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      faqToggle.querySelector(".faq__toggle-label").textContent = isOpen
+        ? "Ocultar FAQ's"
+        : "Revelar FAQ's";
+    });
+  }
+  
 })();
